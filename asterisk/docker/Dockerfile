@@ -8,6 +8,8 @@ ARG MYSQL_DATABASE=asterisk
 ARG MYSQL_USER=sail
 ARG MYSQL_PASSWORD=password
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 WORKDIR /etc/asterisk
 
 RUN apt update  \
